@@ -50,7 +50,7 @@ export const Board: React.FC<BoardProps> = ({ xIsNext, squares, onPlay }) => {
 
   const status = winner
     ? 'Winner: ' + winner
-    : 'Next player: ' + (xIsNext ? 'X' : 'O');
+    : 'Next texucraft: ' + (xIsNext ? 'X' : 'O');
 
   return (
     <div className="board-container">
