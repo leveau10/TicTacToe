@@ -32,8 +32,7 @@ export const Board: React.FC<BoardProps> = ({ xIsNext, squares, onPlay }) => {
         return squares[a];
       }
     }
-
-    return null;
+    return !squares.includes(null) ? 'Old Woman' : null;
   };
 
   const handleClick = (i: number) => {
@@ -48,10 +47,14 @@ export const Board: React.FC<BoardProps> = ({ xIsNext, squares, onPlay }) => {
 
   const winner = calculateWinner(squares);
 
-  const status = winner
-    ? 'Winner: ' + winner
-    : 'Next texucraft: ' + (xIsNext ? 'X' : 'O');
+  const status =
+    winner == null
+      ? 'Next Player: ' + (xIsNext ? 'X' : 'O')
+      : winner != 'Old Woman'
+      ? 'Winner: ' + winner
+      : winner;
 
+  console.log(squares);
   return (
     <div className="board-container">
       <div className="status">{status}</div>
