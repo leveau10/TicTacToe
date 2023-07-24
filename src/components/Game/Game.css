@@ -1,0 +1,14 @@
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.moves-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 16px;
+}
