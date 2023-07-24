@@ -1,0 +1,19 @@
+.board-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  background-color: rgb(226, 232, 248);
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 6em);
+  justify-content: center;
+  margin-top: 32px;
+}

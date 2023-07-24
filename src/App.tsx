@@ -1,9 +1,7 @@
+import { Game } from './components/Game/Game';
+
 import './App.css';
-import { Game } from './components/Board/Board';
+
 export const App = () => {
-  return (
-    <>
-      <Game />
-    </>
-  );
+  return <Game />;
 };
