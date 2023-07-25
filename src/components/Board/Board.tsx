@@ -54,7 +54,6 @@ export const Board: React.FC<BoardProps> = ({ xIsNext, squares, onPlay }) => {
       ? 'Winner: ' + winner
       : winner;
 
-  console.log(squares);
   return (
     <div className="board-container">
       <div className="status">{status}</div>
