@@ -11,8 +11,6 @@ export const Game = () => {
 
   const handlePlay = (nextSquares: SquareValue[]) => {
     const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
-    console.log(history);
-    console.log(nextSquares);
     setHistory(nextHistory);
     setCurrentMove(nextHistory.length - 1);
     setXIsNext(!xIsNext);
